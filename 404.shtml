@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset="utf-8">
+    
+
+    <!-- Page Title -->
+    <title>404</title>
+    <!--/ Page Title -->
+
+    <meta name="author" content="MXMD Unknown">
+    <meta name="description" content="Creative Portfolio & Agency Template 404 Oops">
+    <meta name="keywords" content="portfolio, agency, personal, creative">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="css/plugins.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/favicon.png" />
+    <!--/ Favicons -->
+    <style>
+    .animate-char
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+</style>
+</head>
+
+<body data-barba="wrapper" data-cursor="true" data-header-sticky="true" data-menu-style="overlay" data-page-layout="light" data-header-layout="dark" data-menu-layout="light" data-footer-layout="light" data-page-loader="true">
+
+    <!--Page Loader-->
+    <div data-duration="5" class="alioth-page-loader" data-layout="light">
+
+        <span class="apl-background"></span>
+
+        <!--Loader Percentage (Don't Touch)-->
+        <div class="apl-count"></div>
+        <!--Loader Percentage (Don't Touch)-->
+
+    </div>
+    <!--/Page Loader-->
+
+    <!--Page Transitions-->
+    <div class="alioth-page-transitions" data-layout="light">
+
+        <!--Transition Background (Don't touch)-->
+        <span class="apt-bg"></span>
+        <!--/Transition Background (Don't touch)-->
+
+        <!--Transition Text-->
+        <div class="trans-text">Hmmm, this doesn't seem right..</div>
+        <!--Transition Text-->
+
+    </div>
+    <!--/Page Transitions-->
+
+    <!-- Mouse Cursor -->
+    <div data-dark-circle="rgba(25,27,29,.6)" data-dark-dot="#191b1d" data-light-circle="hsla(0,0%,100%,.2)" data-light-dot="#fff" id="mouseCursor">
+        <div id="cursor"></div>
+        <div id="dot"></div>
+    </div>
+    <!-- /Mouse Cursor -->
+
+    <!-- Header -->
+    <div class="site-header">
+
+        <div class="header-wrapper">
+
+            <!-- Site Branding -->
+            <div class="site-branding">
+
+                 <!-- Site Logos -->
+                <div class="site-logo">
+                    <a href="index.html">
+                        <img alt="Site Logo" class="dark-logo" src="img/mxmd-black.png">
+                        <img alt="Site Logo Light" class="light-logo" src="img/mxmd-white.png">
+                    </a>
+                </div>
+                <!-- /Site Logos -->
+
+            </div>
+            <!-- /Site Branding -->
+
+            <!-- Menu Toggle Button (Don't touch) -->
+            <div class="menu-toggle">
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+            </div>
+            <!-- /Menu Toggle Button (Don't touch) -->
+
+            <!-- Site Navigation -->
+            <div class="site-navigation">
+
+                <span class="sub-back"><i class="icofont-long-arrow-left"></i></span>
+
+                <!-- Main Menu -->
+                <ul class="menu main-menu">
+
+                    <li class="menu-item"><a href="index.html">Home</a></li>
+                    <li class="menu-item"><a href="works.html">Portfolio</a></li>
+                    <li class="menu-item"><a href="about.html">About Us</a></li>
+                    <li class="menu-item"><a href="our-services.html">Services</a></li>
+                    <li class="menu-item"><a href="contact.html">Contact</a></li>
+
+                </ul>
+                <!-- /Main Menu -->
+
+                <!-- Menu Widget (Left) -->
+                <div class="menu-widget menu-widget-left">
+                    <ul class="social-list">
+                        <li><a href="https://www.facebook.com/MXMDigitalDesignAgency">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/mxmdigitalagency">Instagram</a></li>
+                        <li><a href="https://www.twitter.com/mxmdigital">Twitter</a></li>
+                        <li><a href="https://www.linkedin.com/in/mxm-digital">LinkedIn</a></li>
+                    </ul>
+
+                </div>
+                <!-- /Menu Widget (Left) -->
+
+                <!-- Menu Widget (Right) -->
+                <div class="menu-widget menu-widget-right">
+                    <div class="git-button">
+                        <a href="mailto:info@mxmdigital.com">Get in touch!</a>
+                    </div>
+                </div>
+                <!-- /Menu Widget (Right) -->
+
+            </div>
+            <!-- /Site Navigation -->
+
+            <!-- Header Widgets -->
+            <div class="header-widgets">
+
+                <!-- Header Widget-->
+                <div class="header-widget">
+
+                    <!--CTA Widget-->
+                    <div class="header-cta-but">
+                        <a data-hover="Start a Project" href="mailto:info@mxmdigital.com">
+                            Start a Project
+                        </a>
+                    </div>
+                    <!--CTA Widget-->
+
+                </div>
+                <!-- Header Widget-->
+            </div>
+            <!-- /Header Widgets -->
+
+        </div>
+
+    </div>
+    <!-- /Header -->
+
+    <!--Page-->
+    <div id="page" class="404-page" data-barba="container">
+
+        <!--404 Not Found-->
+        <div class="not-found">
+
+            <!--404 Not Found Wrapper-->
+            <div class="not-found-wrap">
+
+                <div class="not-found-header">
+                    <h1 class="animate-char">404</h1>
+                    <h1>d*mn son...where'd you find this?</h1>
+
+                </div>
+
+                <div class="not-found-text">
+                    We're actually from the 404, but we're pretty sure this is the wrong side of town.
+                    <br>The page you are looking for might be coming soon, or might have been moved or deleted. Let's try that again, shall we?
+                </div>
+
+                <div class="not-found-button">
+
+                    <div class="a-button style_1 align-center">
+
+                        <!--Recent Works Button URL-->
+                        <a href="index.html" target="_blank">Home</a>
+                        <!--/Recent Works Button URL-->
+
+                        <!--Recent Works Button Icon-->
+                        <i class="icofont-arrow-right"></i>
+                        <!--/Recent Works Button Icon-->
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!--/404 Not Found Wrapper-->
+
+
+        </div>
+        <!--/404 Not Found-->
+
+
+
+    </div>
+    <!--/Page-->
+
+        <!-- Site Footer -->
+    <div id="footer" class="site-footer section">
+
+        <!-- Footer Wrapper (Top) -->
+        <div class="wrapper">
+
+            <!-- Footer Branding -->
+            <div class="c-col-6 footer-widget footer_brand">
+
+                <!-- Footer Logo -->
+                <div class="footer-logo">
+                    <a href="index.html"><img alt="Footer Logo" src="img/footer-logo.png"></a>
+                </div>
+                <!-- Footer Logo -->
+
+                <!-- Copyright -->
+                <div class="copyright-text">
+                    2022©
+                </div>
+                <!--/ Copyright -->
+
+            </div>
+            <!--/ Footer Branding -->
+
+            <!-- Footer Widget -->
+            <div class="c-col-3 footer-widget">
+
+                <!-- Socials Widget -->
+                <div class="social-list-widget">
+                    <ul>
+                        <li><a target="_blank" href="https://www.facebook.com/MXMDigitalDesignAgency">Facebook</a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/mxmdigitalagency">Instagram</a></li>
+                        <li><a target="_blank" href="https://www.twitter.com/mxmdigital">Twitter</a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/mxm-digital">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <!--/ Socials Widget -->
+
+            </div>
+            <!--/ Footer Widget -->
+
+            <!-- Footer Widget -->
+            <div class="c-col-3 footer-widget">
+
+                <!-- Text Box -->
+                <div class="alioth-text-box">
+                    <h5 style="color: rgba(25,27,29,.6)">1700 Northside Drive, Suite A7 PMB 1190
+                        <br>Atlanta, GA 30318
+                        <br>
+                        <br>+1 929 278 5233
+                    </h5>
+
+                </div>
+                <!--/ Text Box -->
+
+            </div>
+            <!--/ Footer Widget -->
+
+        </div>
+        <!--/ Footer Wraper (Top) -->
+
+        <!-- Footer Wraper (Bottom) -->
+        <div class="wrapper">
+
+            <!-- Footer Widget -->
+            <div class="c-col-6 footer-widget footer_cta">
+
+                <!-- CTA -->
+                <div class="big-button">
+                    <a href="mailto:info@mxmdigital.com">info@mxmdigital.com</a>
+                </div>
+                <!--/ CTA -->
+
+            </div>
+            <!--/ Footer Widget -->
+
+            <!-- Footer Widget -->
+            <div class="c-col-6 footer-widget footer_menu">
+
+                <!-- Footer Menu -->
+                <div class="footer-menu">
+                    <ul>
+                        
+                        <li><a href="mailto:info@mxmdigital.com">Support</a></li>
+                        
+                    </ul>
+
+                </div>
+                <!--/ Footer Menu -->
+
+            </div>
+            <!--/ Footer Widget -->
+
+        </div>
+        <!-- Footer Wraper (Bottom) -->
+
+    </div>
+    <!-- /Site Footer -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/barba.js"></script>
+    <script src="js/locomotive-scroll.min.js"></script>
+    <script src="js/gsap.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
