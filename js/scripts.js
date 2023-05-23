@@ -75,12 +75,12 @@
         },
       })
     );
-  } catch (e) { }
+  } catch (e) {}
 
   var wheelOpt = supportsPassive
     ? {
-      passive: false,
-    }
+        passive: false,
+      }
     : false;
   var wheelEvent =
     "onwheel" in document.createElement("div") ? "wheel" : "mousewheel";
@@ -697,7 +697,7 @@
 
       barba.hooks.after((data) => {
         let cursorLoaded = gsap.timeline({
-          onStart: function () { },
+          onStart: function () {},
           onComplete: function () {
             gsap.set(mouseCursor, {
               rotate: 0,
@@ -940,9 +940,9 @@
           menuItemA = $this.children("a");
 
         var classicSplit = new SplitText(menuItemA, {
-          tyoe: "chars",
-          charsClass: "menu-tit-char",
-        }),
+            tyoe: "chars",
+            charsClass: "menu-tit-char",
+          }),
           mobileQuery = window.matchMedia("(max-width: 900px)");
 
         $(window).on("resize", function (e) {
@@ -1739,7 +1739,7 @@
       initLayout: false,
       gutter: ".aw-works-gutter",
       stamp: ".aw-works-stamp",
-      transitionDuration: 0,
+      transitionDuration: 0.05,
     });
     // layout Masonry after each image loads
     $grid.imagesLoaded().progress(function () {
@@ -2334,20 +2334,20 @@
       if (imageURL != null) {
         $(".fw-images").append(
           '<div class="fw-project-image image_' +
-          i +
-          '"><div class="fw-project-image-wrap"><img src="' +
-          imageURL +
-          '"></div></div>'
+            i +
+            '"><div class="fw-project-image-wrap"><img src="' +
+            imageURL +
+            '"></div></div>'
         );
 
         $this.attr("data-image", ".image_" + i);
       } else {
         $(".fw-images").append(
           '<div class="fw-project-image image_' +
-          i +
-          '"><div class="fw-project-image-wrap"> <div class="showcase-video" data-plyr-provider="vimeo" data-plyr-embed-id="' +
-          videoID +
-          '"></div></div></div>'
+            i +
+            '"><div class="fw-project-image-wrap"> <div class="showcase-video" data-plyr-provider="vimeo" data-plyr-embed-id="' +
+            videoID +
+            '"></div></div></div>'
         );
 
         $this.attr("data-image", ".image_" + i);
@@ -2608,10 +2608,10 @@
       if (wallImage != null) {
         wallImages.append(
           '<div class="wall-image-fix image-' +
-          i +
-          '"><img src="' +
-          wallImage +
-          '"></div>'
+            i +
+            '"><img src="' +
+            wallImage +
+            '"></div>'
         );
       } else {
         wallVideo
@@ -2744,7 +2744,7 @@
       end: "bottom+=2000 top",
       scrub: 1,
       pin: true,
-      onUpdate: function (self) { },
+      onUpdate: function (self) {},
     });
   }
 
@@ -2823,7 +2823,7 @@
           },
           {
             y: "0%",
-            onStart: function () { },
+            onStart: function () {},
           }
         );
       });
@@ -2834,7 +2834,7 @@
         pinSpacing: true,
         start: "top top",
         end: "bottom top",
-        onEnter: function () { },
+        onEnter: function () {},
       });
     }
   }
@@ -4811,14 +4811,14 @@
     });
 
     let csw = gsap.fromTo(
-      wrapper,
-      {
-        x: wrapFirstTrans,
-      },
-      {
-        x: "-" + (wrapper.outerWidth() - $(window).outerWidth() + 350),
-      }
-    ),
+        wrapper,
+        {
+          x: wrapFirstTrans,
+        },
+        {
+          x: "-" + (wrapper.outerWidth() - $(window).outerWidth() + 350),
+        }
+      ),
       windowWidth = $(window).outerWidth(),
       css = new ScrollTrigger({
         trigger: ".carousel-showcase",
@@ -4937,10 +4937,10 @@
       if (video.length) {
         imagesWrapper.append(
           '<div class="ss1-image-wrap swiper-slide ss_slid_' +
-          i +
-          '" data-project="slide_' +
-          i +
-          '"><div class="ss1-sl-image"></div></div>'
+            i +
+            '" data-project="slide_' +
+            i +
+            '"><div class="ss1-sl-image"></div></div>'
         );
 
         let targetSlid = $(".ss_slid_" + i).find(".ss1-sl-image");
@@ -4949,12 +4949,12 @@
       } else {
         imagesWrapper.append(
           '<div class="ss1-image-wrap swiper-slide ss_slid_' +
-          i +
-          '" data-project="slide_' +
-          i +
-          '"><div class="ss1-sl-image"><img src="' +
-          src +
-          '"/></div></div>'
+            i +
+            '" data-project="slide_' +
+            i +
+            '"><div class="ss1-sl-image"><img src="' +
+            src +
+            '"/></div></div>'
         );
       }
 
@@ -5010,7 +5010,7 @@
       loop: true,
       direction: "vertical",
       on: {
-        progress: function (swiper, progress) { },
+        progress: function (swiper, progress) {},
         slideChange: function () {
           slideCheck();
         },
@@ -5464,7 +5464,7 @@
           },
         });
       },
-      onLeaveBack: function () { },
+      onLeaveBack: function () {},
     });
 
     function slideChecko() {
@@ -6920,13 +6920,13 @@
         //Welcome Animation
 
         let sCarouselWelcome = gsap.timeline({
-          onStart: function () {
-            disableScroll();
-          },
-          onComplete: function () {
-            enableScroll();
-          },
-        }),
+            onStart: function () {
+              disableScroll();
+            },
+            onComplete: function () {
+              enableScroll();
+            },
+          }),
           wrapper = $(".cas-project-wrapper"),
           wrapFirstTrans = ($(window).outerWidth() / 100) * 90,
           wrapWidth = -wrapper.outerWidth();
@@ -7001,8 +7001,8 @@
         // Welcome Animation
 
         let welcomeAnim = gsap.timeline({
-          once: true,
-        }),
+            once: true,
+          }),
           currentSlide = $(".swiper-slide-active"),
           nextSlide = $(".swiper-slide-next"),
           prevSlide = $(".swiper-slide-prev"),
@@ -7090,8 +7090,8 @@
         //Welcome Animation
 
         let fsWallWelcome = gsap.timeline({
-          once: true,
-        }),
+            once: true,
+          }),
           dashs = CSSRulePlugin.getRule(".fw-project::after");
 
         fsWallWelcome.fromTo(
@@ -7223,7 +7223,7 @@
           visibility: "visible",
         });
 
-        gsap.to(".apl-background", 0.7, {
+        gsap.to(".apl-background", 0.5, {
           height: "0%",
           ease: "power2.inOut",
           onComplete: function () {
@@ -7738,8 +7738,8 @@
 
                   $("body").append(
                     '<div class="trans-image"><div class="trans-image-wrap"><img src="' +
-                    imageURL +
-                    '"></div></div>'
+                      imageURL +
+                      '"></div></div>'
                   );
 
                   gsap.set(".trans-image", {
@@ -7862,8 +7862,8 @@
 
                   $("body").append(
                     '<div class="trans-image"><div class="trans-image-wrap"><img src="' +
-                    imageURL +
-                    '"></div></div>'
+                      imageURL +
+                      '"></div></div>'
                   );
 
                   gsap.set(".trans-image", {
@@ -7976,8 +7976,8 @@
 
                   $("body").append(
                     '<div class="trans-image"><div class="trans-image-wrap"><img src="' +
-                    imgURL +
-                    '"></div></div>'
+                      imgURL +
+                      '"></div></div>'
                   );
 
                   const mobileQuery = window.matchMedia("(max-width: 450px)");
@@ -8089,8 +8089,8 @@
 
                   $("body").append(
                     '<div class="trans-image"><div class="trans-image-wrap"><img src="' +
-                    imgURL +
-                    '"></div></div>'
+                      imgURL +
+                      '"></div></div>'
                   );
 
                   const mobileQuery = window.matchMedia("(max-width: 450px)");
@@ -8275,8 +8275,8 @@
 
                   $("body").append(
                     '<div class="trans-image"><div class="trans-image-wrap"><img src="' +
-                    imgURL +
-                    '"></div></div>'
+                      imgURL +
+                      '"></div></div>'
                   );
 
                   const mobileQuery = window.matchMedia("(max-width: 450px)");
@@ -8442,8 +8442,8 @@
 
                   $("body").append(
                     '<div class="trans-image"><div class="trans-image-wrap"><img src="' +
-                    imgURL +
-                    '"></div></div>'
+                      imgURL +
+                      '"></div></div>'
                   );
 
                   const mobileQuery = window.matchMedia("(max-width: 450px)");
@@ -8554,8 +8554,8 @@
 
                   $("body").append(
                     '<div class="trans-image"><div class="trans-image-wrap"><img src="' +
-                    imgURL +
-                    '"></div></div>'
+                      imgURL +
+                      '"></div></div>'
                   );
 
                   $(".fw-images").hide();
@@ -8701,8 +8701,8 @@
 
                   $("body").append(
                     '<div class="trans-image"><div class="trans-image-wrap"><img src="' +
-                    imgURL +
-                    '"></div></div>'
+                      imgURL +
+                      '"></div></div>'
                   );
 
                   $(".fw-images").hide();
@@ -8826,8 +8826,8 @@
 
                   $("body").append(
                     '<div class="trans-image"><div class="trans-image-wrap"><img src="' +
-                    imgURL +
-                    '"></div></div>'
+                      imgURL +
+                      '"></div></div>'
                   );
 
                   const mobileQuery = window.matchMedia("(max-width: 450px)");
@@ -8963,8 +8963,8 @@
 
                   $("body").append(
                     '<div class="trans-image"><div class="trans-image-wrap"><img src="' +
-                    imgURL +
-                    '"></div></div>'
+                      imgURL +
+                      '"></div></div>'
                   );
 
                   const mobileQuery = window.matchMedia("(max-width: 450px)");
@@ -9122,8 +9122,8 @@
 
                   $("body").append(
                     '<div class="trans-image"><div class="trans-image-wrap"><img src="' +
-                    imgURL +
-                    '"></div></div>'
+                      imgURL +
+                      '"></div></div>'
                   );
 
                   const mobileQuery = window.matchMedia("(max-width: 450px)");
@@ -9266,8 +9266,8 @@
 
                   $("body").append(
                     '<div class="trans-image"><div class="trans-image-wrap"><img src="' +
-                    imgURL +
-                    '"></div></div>'
+                      imgURL +
+                      '"></div></div>'
                   );
 
                   const mobileQuery = window.matchMedia("(max-width: 450px)");
@@ -9435,8 +9435,8 @@
                   // get the image
                   $("body").append(
                     '<div class="trans-image"><div class="trans-image-wrap"><img src="' +
-                    imgURL +
-                    '"></div></div>'
+                      imgURL +
+                      '"></div></div>'
                   );
 
                   const mobileQuery = window.matchMedia("(max-width: 450px)");
@@ -9558,8 +9558,8 @@
                   // get the image
                   $("body").append(
                     '<div class="trans-image"><div class="trans-image-wrap"><img src="' +
-                    imgURL +
-                    '"></div></div>'
+                      imgURL +
+                      '"></div></div>'
                   );
 
                   const mobileQuery = window.matchMedia("(max-width: 450px)");
@@ -9759,7 +9759,7 @@
                 y: "0%",
                 stagger: 0.01,
               },
-              0.45
+              0.9
             );
           });
         },
@@ -9956,7 +9956,33 @@ $(document).ready(function () {
       location.reload(true); // Refresh the page
     });
   });
+
+  var sitemain = $(".work");
+  var siteHeader = $(".work   .site-header");
+
+  $(window).scroll(function () {
+    var scrollPosition = $(window).scrollTop();
+    var currentBackgroundColor = siteHeader.css("background-color");
+
+    if (currentBackgroundColor === "rgb(0, 0, 0)" && scrollPosition !== 0) {
+      siteHeader.css("background-color", "#000000c0");
+      sitemain.removeClass("workMain");
+      siteHeader.removeClass("dark");
+      siteHeader.addClass("light");
+    } else if (
+      currentBackgroundColor !== "rgb(0, 0, 0)" &&
+      scrollPosition === 0
+    ) {
+      siteHeader.css("background-color", "transparent");
+      siteHeader.removeClass("light");
+      siteHeader.addClass("dark");
+    }
+  });
 });
-
-
-
+$(".menu-toggle").click(function () {
+  $(".menu_dark").each(function () {
+    if (!$(this).hasClass("menu-has-open")) {
+      $(this).removeClass("light");
+    }
+  });
+});

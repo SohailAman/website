@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><meta charset="utf-8">
-    
+<head>
+    <meta charset="utf-8">
+
 
     <!-- Page Title -->
     <title>404</title>
@@ -23,41 +24,40 @@
     <link rel="apple-touch-icon" href="img/favicon.png" />
     <!--/ Favicons -->
     <style>
-    .animate-char
-{
-   text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-      font-size: 190px;
-}
+        .animate-char {
+            text-transform: uppercase;
+            background-image: linear-gradient(-225deg,
+                    #231557 0%,
+                    #44107a 29%,
+                    #ff1361 67%,
+                    #fff800 100%);
+            background-size: auto auto;
+            background-clip: border-box;
+            background-size: 200% auto;
+            color: #fff;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textclip 2s linear infinite;
+            display: inline-block;
+            font-size: 190px;
+        }
 
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
-}
-</style>
+        @keyframes textclip {
+            to {
+                background-position: 200% center;
+            }
+        }
+    </style>
 </head>
 
-<body data-barba="wrapper" data-cursor="true" data-header-sticky="true" data-menu-style="overlay" data-page-layout="light" data-header-layout="dark" data-menu-layout="light" data-footer-layout="light" data-page-loader="true">
+<body data-barba="wrapper" data-cursor="true" data-header-sticky="true" data-menu-style="overlay"
+    data-page-layout="light" data-header-layout="dark" data-menu-layout="light" data-footer-layout="light"
+    data-page-loader="true">
 
     <!--Page Loader-->
-    <div data-duration="5" class="alioth-page-loader" data-layout="light">
+    <div data-duration="3.5" class="alioth-page-loader" data-layout="light">
 
         <span class="apl-background"></span>
 
@@ -83,7 +83,8 @@
     <!--/Page Transitions-->
 
     <!-- Mouse Cursor -->
-    <div data-dark-circle="rgba(25,27,29,.6)" data-dark-dot="#191b1d" data-light-circle="hsla(0,0%,100%,.2)" data-light-dot="#fff" id="mouseCursor">
+    <div data-dark-circle="rgba(25,27,29,.6)" data-dark-dot="#191b1d" data-light-circle="hsla(0,0%,100%,.2)"
+        data-light-dot="#fff" id="mouseCursor">
         <div id="cursor"></div>
         <div id="dot"></div>
     </div>
@@ -97,7 +98,7 @@
             <!-- Site Branding -->
             <div class="site-branding">
 
-                 <!-- Site Logos -->
+                <!-- Site Logos -->
                 <div class="site-logo">
                     <a href="index.html">
                         <img alt="Site Logo" class="dark-logo" src="img/mxmd-black.png">
@@ -197,7 +198,8 @@
 
                 <div class="not-found-text">
                     We're actually from the 404, but we're pretty sure this is the wrong side of town.
-                    <br>The page you are looking for might be coming soon, or might have been moved or deleted. Let's try that again, shall we?
+                    <br>The page you are looking for might be coming soon, or might have been moved or deleted. Let's
+                    try that again, shall we?
                 </div>
 
                 <div class="not-found-button">
@@ -229,7 +231,7 @@
     </div>
     <!--/Page-->
 
-        <!-- Site Footer -->
+    <!-- Site Footer -->
     <div id="footer" class="site-footer section">
 
         <!-- Footer Wrapper (Top) -->
@@ -311,9 +313,9 @@
                 <!-- Footer Menu -->
                 <div class="footer-menu">
                     <ul>
-                        
+
                         <li><a href="mailto:info@mxmdigital.com">Support</a></li>
-                        
+
                     </ul>
 
                 </div>
