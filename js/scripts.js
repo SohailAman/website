@@ -9953,7 +9953,7 @@ $(document).ready(function () {
   $("a").click(function () {
     $(".work").addClass("workMain");
     $(document).ready(function () {
-      location.reload(true); // Refresh the page
+      location.reload(true);
     });
   });
 

@@ -10539,3 +10539,17 @@ body.dark .ac-title {
     text-align: center;
   }
 }
+
+@media screen and (max-width:767px) {
+
+  .sl-images,
+  .sl-images *,
+  .fw-images,
+  .fw-project.opdown .fw-project-category,
+  .fw-project .fw-project-category {
+    display: none !important;
+    visibility: hidden;
+    opacity: 0;
+
+  }
+}
