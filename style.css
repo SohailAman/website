@@ -3649,6 +3649,16 @@ section:after {
     background: #f1f1f1;
   }
 
+  .summ_line,
+  .summ_line span {
+    display: inline !important;
+  }
+
+  .summ_line span b {
+    display: block !important;
+    margin-top: 25px;
+  }
+
   .wrapper {
     max-width: 100%;
     margin-bottom: 0px;
