@@ -9286,7 +9286,7 @@ body.dark .ac-title {
   /* ------- ### Project Pages ------- **/
 
   .project-page-header.style_1 .project-fetaured-image {
-    height: 40vh;
+    height: auto;
   }
 
   .project-page-header.style_1 .project-details {
@@ -10323,6 +10323,7 @@ body.dark .ac-title {
 
     .project-page-header.style_1 .project-fetaured-image img {
       object-fit: cover;
+      height: auto;
     }
 
     .site-header.fullscreen_menu.dark.sticky_header.menu_light .dark-logo {

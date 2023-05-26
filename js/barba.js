@@ -2,12 +2,15 @@
  * Skipped minification because the original files appears to be already minified.
  * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
  */
+"use strict";
+
+
 !(function (t, n) {
   "object" == typeof exports && "undefined" != typeof module
     ? (module.exports = n())
     : "function" == typeof define && define.amd
-    ? define(n)
-    : ((t = t || self).barba = n());
+      ? define(n)
+      : ((t = t || self).barba = n());
 })(this, function () {
   function t(t, n) {
     for (var r = 0; r < n.length; r++) {
@@ -42,8 +45,8 @@
     return (i = Object.setPrototypeOf
       ? Object.getPrototypeOf
       : function (t) {
-          return t.__proto__ || Object.getPrototypeOf(t);
-        })(t);
+        return t.__proto__ || Object.getPrototypeOf(t);
+      })(t);
   }
   function o(t, n) {
     return (o =
@@ -60,7 +63,7 @@
       try {
         return (
           Date.prototype.toString.call(
-            Reflect.construct(Date, [], function () {})
+            Reflect.construct(Date, [], function () { })
           ),
           !0
         );
@@ -70,11 +73,11 @@
     })()
       ? Reflect.construct
       : function (t, n, r) {
-          var e = [null];
-          e.push.apply(e, n);
-          var i = new (Function.bind.apply(t, e))();
-          return r && o(i, r.prototype), i;
-        }).apply(null, arguments);
+        var e = [null];
+        e.push.apply(e, n);
+        var i = new (Function.bind.apply(t, e))();
+        return r && o(i, r.prototype), i;
+      }).apply(null, arguments);
   }
   function f(t) {
     var n = "function" == typeof Map ? new Map() : void 0;
@@ -119,11 +122,11 @@
   "undefined" != typeof Symbol &&
     (Symbol.iterator || (Symbol.iterator = Symbol("Symbol.iterator"))),
     "undefined" != typeof Symbol &&
-      (Symbol.asyncIterator ||
-        (Symbol.asyncIterator = Symbol("Symbol.asyncIterator")));
+    (Symbol.asyncIterator ||
+      (Symbol.asyncIterator = Symbol("Symbol.asyncIterator")));
   var c,
     a = "2.9.7",
-    h = function () {};
+    h = function () { };
   !(function (t) {
     (t[(t.off = 0)] = "off"),
       (t[(t.error = 1)] = "error"),
@@ -187,13 +190,13 @@
   function g(t, n) {
     for (
       var r,
-        e = [],
-        i = 0,
-        o = 0,
-        u = "",
-        f = (n && n.delimiter) || y,
-        s = (n && n.whitelist) || void 0,
-        c = !1;
+      e = [],
+      i = 0,
+      o = 0,
+      u = "",
+      f = (n && n.delimiter) || y,
+      s = (n && n.whitelist) || void 0,
+      c = !1;
       null !== (r = P.exec(t));
 
     ) {
@@ -233,10 +236,10 @@
       if (!i) return !1;
       for (
         var o = i[0],
-          u = i.index,
-          f = {},
-          s = (e && e.decode) || decodeURIComponent,
-          c = 1;
+        u = i.index,
+        f = {},
+        s = (e && e.decode) || decodeURIComponent,
+        c = 1;
         c < i.length;
         c++
       )
@@ -244,8 +247,8 @@
           var a = n[c - 1];
           f[a.name] = a.repeat
             ? i[c].split(a.delimiter).map(function (t) {
-                return s(t, a);
-              })
+              return s(t, a);
+            })
             : s(i[c], a);
         }
       return { path: o, index: u, params: f };
@@ -258,9 +261,9 @@
     return function (n, e) {
       for (
         var i = "",
-          o = (e && e.encode) || encodeURIComponent,
-          u = !e || !1 !== e.validate,
-          f = 0;
+        o = (e && e.encode) || encodeURIComponent,
+        u = !e || !1 !== e.validate,
+        f = 0;
         f < t.length;
         f++
       ) {
@@ -292,20 +295,20 @@
             if (!s.optional)
               throw new TypeError(
                 'Expected "' +
-                  s.name +
-                  '" to be ' +
-                  (s.repeat ? "an array" : "a string")
+                s.name +
+                '" to be ' +
+                (s.repeat ? "an array" : "a string")
               );
           } else {
             if (((c = o(String(a), s)), u && !r[f].test(c)))
               throw new TypeError(
                 'Expected "' +
-                  s.name +
-                  '" to match "' +
-                  s.pattern +
-                  '", but got "' +
-                  c +
-                  '"'
+                s.name +
+                '" to match "' +
+                s.pattern +
+                '", but got "' +
+                c +
+                '"'
               );
             i += s.prefix + c;
           }
@@ -326,16 +329,16 @@
   function T(t, n, r) {
     for (
       var e = (r = r || {}).strict,
-        i = !1 !== r.start,
-        o = !1 !== r.end,
-        u = r.delimiter || y,
-        f = []
-          .concat(r.endsWith || [])
-          .map(k)
-          .concat("$")
-          .join("|"),
-        s = i ? "^" : "",
-        c = 0;
+      i = !1 !== r.start,
+      o = !1 !== r.end,
+      u = r.delimiter || y,
+      f = []
+        .concat(r.endsWith || [])
+        .map(k)
+        .concat("$")
+        .join("|"),
+      s = i ? "^" : "",
+      c = 0;
       c < t.length;
       c++
     ) {
@@ -344,12 +347,12 @@
       else {
         var h = a.repeat
           ? "(?:" +
-            a.pattern +
-            ")(?:" +
-            k(a.delimiter) +
-            "(?:" +
-            a.pattern +
-            "))*"
+          a.pattern +
+          ")(?:" +
+          k(a.delimiter) +
+          "(?:" +
+          a.pattern +
+          "))*"
           : a.pattern;
         n && n.push(a),
           (s += a.optional
@@ -372,27 +375,27 @@
   function O(t, n, r) {
     return t instanceof RegExp
       ? (function (t, n) {
-          if (!n) return t;
-          var r = t.source.match(/\((?!\?)/g);
-          if (r)
-            for (var e = 0; e < r.length; e++)
-              n.push({
-                name: e,
-                prefix: null,
-                delimiter: null,
-                optional: !1,
-                repeat: !1,
-                pattern: null,
-              });
-          return t;
-        })(t, n)
+        if (!n) return t;
+        var r = t.source.match(/\((?!\?)/g);
+        if (r)
+          for (var e = 0; e < r.length; e++)
+            n.push({
+              name: e,
+              prefix: null,
+              delimiter: null,
+              optional: !1,
+              repeat: !1,
+              pattern: null,
+            });
+        return t;
+      })(t, n)
       : Array.isArray(t)
-      ? (function (t, n, r) {
+        ? (function (t, n, r) {
           for (var e = [], i = 0; i < t.length; i++)
             e.push(O(t[i], n, r).source);
           return new RegExp("(?:" + e.join("|") + ")", R(r));
         })(t, n, r)
-      : (function (t, n, r) {
+        : (function (t, n, r) {
           return T(g(t, r), n, r);
         })(t, n, r);
   }
@@ -408,13 +411,13 @@
     (d.tokensToFunction = w),
     (d.tokensToRegExp = b);
   var S = {
-      container: "container",
-      history: "history",
-      namespace: "namespace",
-      prefix: "data-barba",
-      prevent: "prevent",
-      wrapper: "wrapper",
-    },
+    container: "container",
+    history: "history",
+    namespace: "namespace",
+    prefix: "data-barba",
+    prevent: "prevent",
+    wrapper: "wrapper",
+  },
     j = new ((function () {
       function t() {
         (this.o = S), (this.u = new DOMParser());
@@ -573,10 +576,10 @@
               ? "forward"
               : "back"
             : 0 === t
-            ? "popstate"
-            : t > 0
-            ? "back"
-            : "forward";
+              ? "popstate"
+              : t > 0
+                ? "back"
+                : "forward";
         }),
         n(t, [
           {
@@ -624,7 +627,7 @@
               }
             });
         })();
-        return Promise.resolve(r && r.then ? r.then(function () {}) : void 0);
+        return Promise.resolve(r && r.then ? r.then(function () { }) : void 0);
       } catch (t) {
         return Promise.reject(t);
       }
@@ -755,92 +758,92 @@
     );
   }
   var X = new ((function (t) {
-      function n() {
-        var n;
-        return (
-          ((n = t.call(this) || this).logger = new l("@barba/core")),
-          (n.all = [
-            "ready",
-            "page",
-            "reset",
-            "currentAdded",
-            "currentRemoved",
-            "nextAdded",
-            "nextRemoved",
-            "beforeOnce",
-            "once",
-            "afterOnce",
-            "before",
-            "beforeLeave",
-            "leave",
-            "afterLeave",
-            "beforeEnter",
-            "enter",
-            "afterEnter",
-            "after",
-          ]),
-          (n.registered = new Map()),
-          n.init(),
-          n
-        );
-      }
-      e(n, t);
-      var r = n.prototype;
+    function n() {
+      var n;
       return (
-        (r.init = function () {
-          var t = this;
-          this.registered.clear(),
-            this.all.forEach(function (n) {
-              t[n] ||
-                (t[n] = function (r, e) {
-                  t.registered.has(n) || t.registered.set(n, new Set()),
-                    t.registered.get(n).add({ ctx: e || {}, fn: r });
-                });
-            });
-        }),
-        (r.do = function (t) {
-          for (
-            var n = this,
-              r = arguments.length,
-              e = new Array(r > 1 ? r - 1 : 0),
-              i = 1;
-            i < r;
-            i++
-          )
-            e[i - 1] = arguments[i];
-          if (this.registered.has(t)) {
-            var o = Promise.resolve();
-            return (
-              this.registered.get(t).forEach(function (t) {
-                o = o.then(function () {
-                  return N(t.fn, t.ctx).apply(void 0, e);
-                });
-              }),
-              o.catch(function (r) {
-                n.logger.debug("Hook error [" + t + "]"), n.logger.error(r);
-              })
-            );
-          }
-          return Promise.resolve();
-        }),
-        (r.clear = function () {
-          var t = this;
-          this.all.forEach(function (n) {
-            delete t[n];
-          }),
-            this.init();
-        }),
-        (r.help = function () {
-          this.logger.info("Available hooks: " + this.all.join(","));
-          var t = [];
-          this.registered.forEach(function (n, r) {
-            return t.push(r);
-          }),
-            this.logger.info("Registered hooks: " + t.join(","));
-        }),
+        ((n = t.call(this) || this).logger = new l("@barba/core")),
+        (n.all = [
+          "ready",
+          "page",
+          "reset",
+          "currentAdded",
+          "currentRemoved",
+          "nextAdded",
+          "nextRemoved",
+          "beforeOnce",
+          "once",
+          "afterOnce",
+          "before",
+          "beforeLeave",
+          "leave",
+          "afterLeave",
+          "beforeEnter",
+          "enter",
+          "afterEnter",
+          "after",
+        ]),
+        (n.registered = new Map()),
+        n.init(),
         n
       );
-    })(h))(),
+    }
+    e(n, t);
+    var r = n.prototype;
+    return (
+      (r.init = function () {
+        var t = this;
+        this.registered.clear(),
+          this.all.forEach(function (n) {
+            t[n] ||
+              (t[n] = function (r, e) {
+                t.registered.has(n) || t.registered.set(n, new Set()),
+                  t.registered.get(n).add({ ctx: e || {}, fn: r });
+              });
+          });
+      }),
+      (r.do = function (t) {
+        for (
+          var n = this,
+          r = arguments.length,
+          e = new Array(r > 1 ? r - 1 : 0),
+          i = 1;
+          i < r;
+          i++
+        )
+          e[i - 1] = arguments[i];
+        if (this.registered.has(t)) {
+          var o = Promise.resolve();
+          return (
+            this.registered.get(t).forEach(function (t) {
+              o = o.then(function () {
+                return N(t.fn, t.ctx).apply(void 0, e);
+              });
+            }),
+            o.catch(function (r) {
+              n.logger.debug("Hook error [" + t + "]"), n.logger.error(r);
+            })
+          );
+        }
+        return Promise.resolve();
+      }),
+      (r.clear = function () {
+        var t = this;
+        this.all.forEach(function (n) {
+          delete t[n];
+        }),
+          this.init();
+      }),
+      (r.help = function () {
+        this.logger.info("Available hooks: " + this.all.join(","));
+        var t = [];
+        this.registered.forEach(function (n, r) {
+          return t.push(r);
+        }),
+          this.logger.info("Registered hooks: " + t.join(","));
+      }),
+      n
+    );
+  })(h))(),
     z = (function () {
       function t(t) {
         if (((this.P = []), "boolean" == typeof t)) this.g = t;
@@ -994,16 +997,16 @@
           ((i = t.call.apply(t, [this].concat(u)) || this).error = r),
           (i.label = e),
           Error.captureStackTrace &&
-            Error.captureStackTrace(
-              (function (t) {
-                if (void 0 === t)
-                  throw new ReferenceError(
-                    "this hasn't been initialised - super() hasn't been called"
-                  );
-                return t;
-              })(i),
-              n
-            ),
+          Error.captureStackTrace(
+            (function (t) {
+              if (void 0 === t)
+                throw new ReferenceError(
+                  "this hasn't been initialised - super() hasn't been called"
+                );
+              return t;
+            })(i),
+            n
+          ),
           (i.name = "BarbaError"),
           i
         );
@@ -1044,11 +1047,11 @@
           e = e.filter(
             n.self
               ? function (t) {
-                  return t.name && "self" === t.name;
-                }
+                return t.name && "self" === t.name;
+              }
               : function (t) {
-                  return !t.name || "self" !== t.name;
-                }
+                return !t.name || "self" !== t.name;
+              }
           );
           var i = new Map(),
             o = e.find(function (e) {
@@ -1059,14 +1062,14 @@
                 (r.A.reverse().forEach(function (n) {
                   o &&
                     ((o = r.R(e, n, t, u)),
-                    e.from &&
+                      e.from &&
                       e.to &&
                       (o = r.R(e, n, t, u, "from") && r.R(e, n, t, u, "to")),
-                    e.from && !e.to && (o = r.R(e, n, t, u, "from")),
-                    !e.from && e.to && (o = r.R(e, n, t, u, "to")));
+                      e.from && !e.to && (o = r.R(e, n, t, u, "from")),
+                      !e.from && e.to && (o = r.R(e, n, t, u, "to")));
                 }),
-                i.set(e, u),
-                o)
+                  i.set(e, u),
+                  o)
               );
             }),
             u = i.get(o),
@@ -1139,7 +1142,7 @@
           var e = 0;
           return (
             (t[n] || (t.from && t.from[n]) || (t.to && t.to[n])) &&
-              ((e += Math.pow(10, r)),
+            ((e += Math.pow(10, r)),
               t.from && t.from[n] && (e += 1),
               t.to && t.to[n] && (e += 2)),
             e
@@ -1177,8 +1180,8 @@
             r = t.transition;
           try {
             var e = function () {
-                i.S = !1;
-              },
+              i.S = !1;
+            },
               i = this,
               o = r || {};
             i.S = !0;
@@ -1188,7 +1191,7 @@
                   function () {
                     return Promise.resolve(i.once(n, o)).then(function () {
                       return Promise.resolve(i.j("afterOnce", n, o)).then(
-                        function () {}
+                        function () { }
                       );
                     });
                   }
@@ -1212,9 +1215,9 @@
             i = t.wrapper;
           try {
             var o = function (t) {
-                if (u) return t;
-                f.S = !1;
-              },
+              if (u) return t;
+              f.S = !1;
+            },
               u = !1,
               f = this,
               c = r || {},
@@ -1229,10 +1232,10 @@
                       return t
                         ? r
                         : Promise.resolve(f.remove(n)).then(function () {
-                            return Promise.resolve(f.j("after", n, c)).then(
-                              function () {}
-                            );
-                          });
+                          return Promise.resolve(f.j("after", n, c)).then(
+                            function () { }
+                          );
+                        });
                     }
                     var o = (function () {
                       if (a)
@@ -1257,7 +1260,7 @@
                                       ).then(function () {
                                         return Promise.resolve(
                                           f.j("afterEnter", n, c)
-                                        ).then(function () {});
+                                        ).then(function () { });
                                       });
                                     });
                                   });
@@ -1271,40 +1274,40 @@
                           }
                         );
                       var r = function (r) {
-                          return t
-                            ? r
-                            : s(
-                                function () {
-                                  var t = (function () {
-                                    if (!1 !== o)
-                                      return Promise.resolve(f.add(n, i)).then(
-                                        function () {
+                        return t
+                          ? r
+                          : s(
+                            function () {
+                              var t = (function () {
+                                if (!1 !== o)
+                                  return Promise.resolve(f.add(n, i)).then(
+                                    function () {
+                                      return Promise.resolve(
+                                        f.j("beforeEnter", n, c)
+                                      ).then(function () {
+                                        return Promise.resolve(
+                                          f.enter(n, c, o)
+                                        ).then(function () {
                                           return Promise.resolve(
-                                            f.j("beforeEnter", n, c)
-                                          ).then(function () {
-                                            return Promise.resolve(
-                                              f.enter(n, c, o)
-                                            ).then(function () {
-                                              return Promise.resolve(
-                                                f.j("afterEnter", n, c)
-                                              ).then(function () {});
-                                            });
-                                          });
-                                        }
-                                      );
-                                  })();
-                                  if (t && t.then)
-                                    return t.then(function () {});
-                                },
-                                function (t) {
-                                  if (f.M(t))
-                                    throw new it(
-                                      t,
-                                      "Transition error [before/after/enter]"
-                                    );
-                                }
-                              );
-                        },
+                                            f.j("afterEnter", n, c)
+                                          ).then(function () { });
+                                        });
+                                      });
+                                    }
+                                  );
+                              })();
+                              if (t && t.then)
+                                return t.then(function () { });
+                            },
+                            function (t) {
+                              if (f.M(t))
+                                throw new it(
+                                  t,
+                                  "Transition error [before/after/enter]"
+                                );
+                            }
+                          );
+                      },
                         o = !1,
                         u = s(
                           function () {
@@ -1321,7 +1324,7 @@
                                 return (
                                   (o = t),
                                   Promise.resolve(f.j("afterLeave", n, c)).then(
-                                    function () {}
+                                    function () { }
                                   )
                                 );
                               });
@@ -1341,7 +1344,7 @@
                   });
                 }
                 var r = (function () {
-                  if (a) return Promise.resolve(L(e, n)).then(function () {});
+                  if (a) return Promise.resolve(L(e, n)).then(function () { });
                 })();
                 return r && r.then ? r.then(t) : t();
               },
@@ -1350,8 +1353,8 @@
                   throw (f.logger.debug(t.label), f.logger.error(t.error), t);
                 throw (
                   (f.logger.debug("Transition error [page]"),
-                  f.logger.error(t),
-                  t)
+                    f.logger.error(t),
+                    t)
                 );
               }
             );
@@ -1470,9 +1473,9 @@
         ]),
           (this.byNamespace = new Map()),
           0 !== t.length &&
-            (t.forEach(function (t) {
-              n.byNamespace.set(t.namespace, t);
-            }),
+          (t.forEach(function (t) {
+            n.byNamespace.set(t.namespace, t);
+          }),
             this.names.forEach(function (t) {
               X[t](n.L(t));
             }));
@@ -1494,14 +1497,14 @@
       Element.prototype.msMatchesSelector ||
       Element.prototype.webkitMatchesSelector),
     Element.prototype.closest ||
-      (Element.prototype.closest = function (t) {
-        var n = this;
-        do {
-          if (n.matches(t)) return n;
-          n = n.parentElement || n.parentNode;
-        } while (null !== n && 1 === n.nodeType);
-        return null;
-      });
+    (Element.prototype.closest = function (t) {
+      var n = this;
+      do {
+        if (n.matches(t)) return n;
+        n = n.parentElement || n.parentNode;
+      } while (null !== n && 1 === n.nodeType);
+      return null;
+    });
   var st = {
     container: null,
     html: "",
@@ -1529,8 +1532,8 @@
         r.indexOf(t) > -1
           ? this.logger.warn("Plugin [" + t.name + "] already installed.")
           : "function" == typeof t.install
-          ? (t.install(this, n), r.push(t))
-          : this.logger.warn(
+            ? (t.install(this, n), r.push(t))
+            : this.logger.warn(
               "Plugin [" + t.name + '] has no "install" method.'
             );
       }),
@@ -1559,17 +1562,17 @@
           (l.setLevel(
             !0 === (void 0 !== g && g) ? "debug" : void 0 === E ? "off" : E
           ),
-          this.logger.info(this.version),
-          Object.keys(s).forEach(function (t) {
-            S[t] && (S[t] = s[t]);
-          }),
-          (this.$ = c),
-          (this.timeout = h),
-          (this.cacheIgnore = d),
-          (this.prefetchIgnore = p),
-          (this.preventRunning = b),
-          (this._ = this.dom.getWrapper()),
-          !this._)
+            this.logger.info(this.version),
+            Object.keys(s).forEach(function (t) {
+              S[t] && (S[t] = s[t]);
+            }),
+            (this.$ = c),
+            (this.timeout = h),
+            (this.cacheIgnore = d),
+            (this.prefetchIgnore = p),
+            (this.preventRunning = b),
+            (this._ = this.dom.getWrapper()),
+            !this._)
         )
           throw new Error("[@barba/core] No Barba wrapper found");
         this._.setAttribute("aria-live", "polite"), this.q();
@@ -1578,10 +1581,10 @@
           throw new Error("[@barba/core] No Barba container found");
         if (
           ((this.cache = new G(d)),
-          (this.prevent = new et(p)),
-          (this.transitions = new ut(i)),
-          (this.views = new ft(u)),
-          null !== P)
+            (this.prevent = new et(p)),
+            (this.transitions = new ut(i)),
+            (this.views = new ft(u)),
+            null !== P)
         ) {
           if ("function" != typeof P)
             throw new Error("[@barba/core] Prevent should be a function");
@@ -1621,8 +1624,8 @@
           !(e =
             "popstate" === n
               ? this.history.current &&
-                this.url.getPath(this.history.current.url) ===
-                  this.url.getPath(t)
+              this.url.getPath(this.history.current.url) ===
+              this.url.getPath(t)
               : this.prevent.run("sameUrl", null, null, t)) ||
           this.transitions.hasSelf
         )
@@ -1639,7 +1642,7 @@
             function () {
               function r() {
                 return Promise.resolve(n.hooks.do("afterEnter", t)).then(
-                  function () {}
+                  function () { }
                 );
               }
               var e = (function () {
@@ -1647,7 +1650,7 @@
                   var r = n.transitions.get(t, { once: !0 });
                   return Promise.resolve(
                     n.transitions.doOnce({ transition: r, data: t })
-                  ).then(function () {});
+                  ).then(function () { });
                 }
               })();
               return e && e.then ? e.then(r) : r();
@@ -1660,42 +1663,42 @@
       (e.page = function (t, n, e) {
         try {
           var i = function () {
-              var t = o.data;
-              return Promise.resolve(o.hooks.do("page", t)).then(function () {
-                var n = s(
-                  function () {
-                    var n = o.transitions.get(t, { once: !1, self: e });
-                    return Promise.resolve(
-                      o.transitions.doPage({
-                        data: t,
-                        page: u,
-                        transition: n,
-                        wrapper: o._,
-                      })
-                    ).then(function () {
-                      o.q();
-                    });
-                  },
-                  function () {
-                    0 === l.getLevel() && o.force(t.current.url.href);
-                  }
-                );
-                if (n && n.then) return n.then(function () {});
-              });
-            },
+            var t = o.data;
+            return Promise.resolve(o.hooks.do("page", t)).then(function () {
+              var n = s(
+                function () {
+                  var n = o.transitions.get(t, { once: !1, self: e });
+                  return Promise.resolve(
+                    o.transitions.doPage({
+                      data: t,
+                      page: u,
+                      transition: n,
+                      wrapper: o._,
+                    })
+                  ).then(function () {
+                    o.q();
+                  });
+                },
+                function () {
+                  0 === l.getLevel() && o.force(t.current.url.href);
+                }
+              );
+              if (n && n.then) return n.then(function () { });
+            });
+          },
             o = this;
           (o.data.next.url = r({ href: t }, o.url.parse(t))),
             (o.data.trigger = n);
           var u = o.cache.has(t)
-              ? o.cache.update(t, { action: "click" }).request
-              : o.cache.set(
-                  t,
-                  o.request(t, o.timeout, o.onRequestError.bind(o, n)),
-                  "click"
-                ).request,
+            ? o.cache.update(t, { action: "click" }).request
+            : o.cache.set(
+              t,
+              o.request(t, o.timeout, o.onRequestError.bind(o, n)),
+              "click"
+            ).request,
             f = (function () {
               if (o.transitions.shouldWait)
-                return Promise.resolve(L(u, o.data)).then(function () {});
+                return Promise.resolve(L(u, o.data)).then(function () { });
             })();
           return Promise.resolve(f && f.then ? f.then(i) : i());
         } catch (t) {
@@ -1739,14 +1742,14 @@
       (e.F = function () {
         !0 !== this.prefetchIgnore &&
           (document.addEventListener("mouseover", this.B),
-          document.addEventListener("touchstart", this.B)),
+            document.addEventListener("touchstart", this.B)),
           document.addEventListener("click", this.U),
           window.addEventListener("popstate", this.D);
       }),
       (e.H = function () {
         !0 !== this.prefetchIgnore &&
           (document.removeEventListener("mouseover", this.B),
-          document.removeEventListener("touchstart", this.B)),
+            document.removeEventListener("touchstart", this.B)),
           document.removeEventListener("click", this.U),
           window.removeEventListener("popstate", this.D);
       }),
@@ -1781,7 +1784,7 @@
         this.go(this.url.getHref(), "popstate", t);
       }),
       (e.I = function (t) {
-        for (var n = t.target; n && !this.dom.getHref(n); ) n = n.parentNode;
+        for (var n = t.target; n && !this.dom.getHref(n);) n = n.parentNode;
         if (n && !this.prevent.checkLink(n, t, this.dom.getHref(n))) return n;
       }),
       (e.q = function () {
