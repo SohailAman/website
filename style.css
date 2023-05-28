@@ -1737,6 +1737,10 @@ body.loading span.toggle-line {
   display: block;
 }
 
+.menu_light .header-cta-but a {
+  color: rgb(80, 78, 78);
+}
+
 .header-cta-but a {
   text-decoration: none;
   color: rgb(255 255 255);
