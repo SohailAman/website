@@ -1738,7 +1738,7 @@ body.loading span.toggle-line {
 }
 
 .site-header.dark .header-cta-but a {
-  color: rgb(146, 142, 142);
+  color: rgb(0, 0, 0);
 }
 
 .header-cta-but a {
