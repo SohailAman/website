@@ -2877,9 +2877,10 @@ body.light .testimonial-name,
 
 .a-button.style_1.light,
 .a-button.style_1 {
-  display: inline-block;
+  display: block;
   background-color: #191b1d;
-  margin: 25px 0;
+  margin: 25px auto;
+  width: fit-content;
   border-radius: 25px;
   position: relative;
   overflow: hidden;
