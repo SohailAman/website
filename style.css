@@ -1737,8 +1737,8 @@ body.loading span.toggle-line {
   display: block;
 }
 
-.menu_light .header-cta-but a {
-  color: rgb(80, 78, 78);
+.site-header.dark .header-cta-but a {
+  color: rgb(146, 142, 142);
 }
 
 .header-cta-but a {
